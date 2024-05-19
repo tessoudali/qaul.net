@@ -10,7 +10,7 @@ WORKDIR /qaul/rust
 RUN cargo build --release
 
 
-FROM alpine:3.17 AS runner
+FROM alpine:3.18.6 AS runner
 
 RUN apk add gcompat libstdc++
 
